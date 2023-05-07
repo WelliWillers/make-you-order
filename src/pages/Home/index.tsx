@@ -51,11 +51,11 @@ export default function Home(){
           updatedCommands.push(newCommand)
   
           update(ref(db, 'commands/'+ (updatedCommands.length - 1)), updatedCommands[updatedCommands.length - 1])
-          .then(() => {
-            navigate(`/commands/${updatedCommands.length - 1}`)
-          }).catch((error) => {
-            console.log('error2', error)
-          })
+            .then(() => {
+              navigate(`/commands/${updatedCommands.length - 1}`)
+            }).catch((error) => {
+              console.log('error2', error)
+            })
         }
         
         setAllCommands(updatedCommands)

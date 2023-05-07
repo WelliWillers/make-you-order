@@ -12,6 +12,8 @@ import { validUserPermission } from "../../utils/ValidUserPermission";
 import { useNavigate } from "react-router-dom";
 import { CommandsProps } from "../../types";
 
+import EmptyIcon from '../../assets/empty.svg'
+
 export default function Commands() {
 
   const {setLoading} = useLoader()
@@ -148,12 +150,15 @@ export default function Commands() {
             }
           </div>
         ) : (
-          <p>Nenhuma comanda em uso no momento</p>
+          <div className="text-center m-auto">
+            <p className="text-2xl py-4">Nenhuma comanda em uso no momento</p>
+            <img className="mx-auto max-w-[20rem] py-6" src={EmptyIcon} />
+          </div>
         )
       }
 
       {
-        !haveCommandsOpen && (
+        !haveCommandsOpen && filteredCommands.length != 0 && (
           <button
             onClick={handleFinishNight}
             className="flex items-center mt-8 w-full justify-center rounded-md bg-blue-600 px-3 py-4 text-sm font-semibold leading-6 text-blue-50 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"

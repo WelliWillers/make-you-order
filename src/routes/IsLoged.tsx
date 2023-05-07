@@ -6,7 +6,7 @@ export default function IsLoged() {
   const { user } = useAuth();
   
   if(user.data) {
-    toast.warning('Você já esta logado')
+    // toast.warning('Você já esta logado')
     return <Navigate to={'/home'}/>
   }
 

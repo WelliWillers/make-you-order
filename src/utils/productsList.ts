@@ -7,6 +7,12 @@ import cafeColonial from '../assets/lanches/tratados/cafe-colonial.png'
 import pizza from '../assets/lanches/tratados/pizza-da-casa.png'
 import porcaoSalada from '../assets/lanches/tratados/porcao-de-salada.png'
 import porcaoFritas from '../assets/lanches/tratados/porcao-de-fritas-com-bacon.png'
+import agua from '../assets/bebidas/tratadas/agua.png'
+import stella from '../assets/bebidas/tratadas/stella.png'
+import heineken from '../assets/bebidas/tratadas/heineken.png'
+import brahma from '../assets/bebidas/tratadas/brahma.png'
+import h2o from '../assets/bebidas/tratadas/h2o.png'
+import choop from '../assets/bebidas/tratadas/choop-salva.png'
 
 export const products = [
   {
@@ -64,6 +70,48 @@ export const products = [
     price: 3200,
     image: porcaoFritas,
     ingredients: 'Batata frita com bacon'
+  },
+  {
+    id: uuid(),
+    name: 'Água da pedra 550ml',
+    price: 500,
+    image: agua,
+    ingredients: ''
+  },
+  {
+    id: uuid(),
+    name: 'Stella artois Puro Malte long neck 330ml',
+    price: 1000,
+    image: stella,
+    ingredients: ''
+  },
+  {
+    id: uuid(),
+    name: 'Heineken long neck 330ml',
+    price: 1000,
+    image: heineken,
+    ingredients: ''
+  },
+  {
+    id: uuid(),
+    name: 'Brahma duplo malte 375ml',
+    price: 800,
+    image: brahma,
+    ingredients: ''
+  },
+  {
+    id: uuid(),
+    name: 'H²O Limão',
+    price: 600,
+    image: h2o,
+    ingredients: ''
+  },
+  {
+    id: uuid(),
+    name: 'Choop Salva 300ml',
+    price: 800,
+    image: choop,
+    ingredients: ''
   },
 
 ]

@@ -7,6 +7,7 @@ import { format } from "date-fns";
 import { returnErrorMsg } from "../../utils/ErrorReport";
 import { useCommands } from "../../hooks/useCommands";
 
+import EmptyIcon from '../../assets/empty.svg'
 export default function Orders() {
   const { user } = useAuth();
   const { setLoading } = useLoader();
@@ -160,7 +161,10 @@ export default function Orders() {
 
           })
         ) : (
-          <p>Nenhum pedido ainda cadastrado</p>
+          <div className="text-center m-auto">
+            <p>Nenhum pedido ainda cadastrado</p>
+            <img className="mx-auto max-w-[20rem] py-6" src={EmptyIcon} />
+          </div>
         )}
       </ul>
     </div>

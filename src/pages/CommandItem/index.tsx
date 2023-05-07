@@ -231,7 +231,7 @@ export default function CommandItem() {
         <Dialog.Portal>
           <Dialog.Overlay className="bg-black opacity-40 fixed inset-0" />
 
-          <Dialog.Content className="animate-fadeIn overflow-hidden bg-gray-50 p-8 mr-2 w-full rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[95%] max-h-[90%]">
+          <Dialog.Content className="animate-fadeIn overflow-hidden bg-gray-50 p-4 mr-2 w-full rounded-lg fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[95%] max-h-[90%]">
             
             <div className="flex items-center justify-between">
               <Dialog.Title className="text-2xl pb-4">Montar pedido</Dialog.Title>
@@ -245,10 +245,10 @@ export default function CommandItem() {
             <div className="h-full">
               <Tabs.Root className="h-auto" defaultValue={tab} onValueChange={setTab}>
                 <Tabs.List className="flex items-center justify-evenly" aria-label="Manage your account">
-                  <Tabs.Trigger className="w-full p-4 border-b border-blue-600 rounded-t-2xl hover:bg-blue-100 transition-colors data-[state=active]:bg-blue-600 data-[state=active]:text-white" value="pedido">
+                  <Tabs.Trigger className="w-full px-4 py-1 border-b border-blue-600 rounded-t-2xl hover:bg-blue-100 transition-colors data-[state=active]:bg-blue-600 data-[state=active]:text-white" value="pedido">
                     Pedido
                   </Tabs.Trigger>
-                  <Tabs.Trigger className="w-full p-4 border-b border-blue-600 rounded-t-2xl hover:bg-blue-100 transition-colors data-[state=active]:bg-blue-600 data-[state=active]:text-white" value="local">
+                  <Tabs.Trigger className="w-full px-4 py-1 border-b border-blue-600 rounded-t-2xl hover:bg-blue-100 transition-colors data-[state=active]:bg-blue-600 data-[state=active]:text-white" value="local">
                     Local
                   </Tabs.Trigger>
                 </Tabs.List>
@@ -369,7 +369,7 @@ export default function CommandItem() {
                   onClick={handleDiscartOrder}
                   className="flex w-full justify-center rounded-md bg-gray-700 px-3 py-4 text-sm font-semibold leading-6 text-gray-50 shadow-sm hover:bg-gray-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
-                  Discartar
+                  Descartar
                 </button>
                 <button
                   type="submit"
